@@ -6,33 +6,13 @@ application that you can use as the skeleton for your new app. If you want
 to learn more about the features included, see the "What's Inside?" section.
 
 This document contains information on how to download and start using Symfony.
-For a more detailed explanation, see the
-[Installation chapter](http://symfony.com/doc/current/book/installation.html)
-of the Symfony Documentation.
 
 1) Download the Standard Edition
 --------------------------------
 
-If you've already downloaded the standard edition, and unpacked it somewhere
-within your web root directory, then move on to the "Installation" section.
-
-To download the standard edition, you have two options:
-
-### Download an archive file (*recommended*)
-
-The easiest way to get started is to download an archive of the standard edition
-(http://symfony.com/download). Unpack it somewhere under your web server root
-directory and you're done. The web root is wherever your web server (e.g. Apache)
-looks when you access `http://localhost` in a browser.
-
-### Clone the git Repository
-
-We highly recommend that you download the packaged version of this distribution.
-But if you still want to use Git, you are on your own.
-
 Run the following commands:
 
-    git clone http://github.com/symfony/symfony-standard.git
+    git clone http://github.com/KnpLabs/symfony-standard.git
     cd symfony-standard
     rm -rf .git
 
