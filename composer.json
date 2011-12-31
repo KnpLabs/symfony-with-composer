@@ -1,0 +1,56 @@
+{
+    "require": {
+        "symfony/symfony":  ">=2.0.7,<2.1.0-dev",
+        "doctrine/orm":     ">=2.1.0,<2.2.0-dev",
+        "twig/extensions":  "*",
+
+        "symfony/assetic-bundle":         "*",
+        "sensio/generator-bundle":        "*",
+        "sensio/framework-extra-bundle":  "2.0.0-dev",
+        "sensio/distribution-bundle":     "2.0.0-dev",
+        "jms/security-extra-bundle":      "2.0.0-dev"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Acme": "src/"
+        }
+    },
+
+    "repositories": {
+        "jms/security-extra-bundle-2.0.0-dev": {
+            "package": {
+                "name":     "jms/security-extra-bundle",
+                "version":  "2.0.0-dev",
+                "type":     "symfony-bundle",
+                "license":  "Apache",
+                "authors": [
+                    {
+                        "name":   "Johannes M. Schmitt",
+                        "email":  "schmittjoh@gmail.com"
+                    }
+                ],
+                "dist": {
+                    "url":  "https://github.com/schmittjoh/JMSSecurityExtraBundle/zipball/1.0.x",
+                    "type": "zip"
+                },
+                "source": {
+                    "url":       "git://github.com/schmittjoh/JMSSecurityExtraBundle.git",
+                    "type":      "git",
+                    "reference": "1.0.x"
+                },
+                "require": {
+                    "symfony/framework-bundle":  ">=2.0.0,<2.1.0-dev",
+                    "metadata/metadata":         "master-dev"
+                },
+                "recommend": {
+                    "jms/di-extra-bundle": "master-dev"
+                },
+                "autoload": {
+                    "psr-0": { "JMS\\SecurityExtraBundle": "" }
+                },
+                "target-dir": "JMS/SecurityExtraBundle"
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+app/cache/*
+app/logs/*
+app/*.cache
+web/bundles/*
+web/uploads/*
+app/config/parameters.ini
+vendor
+composer.phar
+composer.lock
