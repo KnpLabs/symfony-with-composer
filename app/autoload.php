@@ -6,13 +6,13 @@ use Doctrine\Common\Annotations\AnnotationRegistry;
 $loader = require_once __DIR__.'/../vendor/.composer/autoload.php';
 
 // intl
-$universalLoader = new UniversalClassLoader();
 if (!function_exists('intl_get_error_code')) {
-    require_once __DIR__.'/../vendor/symfony/src/Symfony/Component/Locale/Resources/stubs/functions.php';
+    $universalLoader = new UniversalClassLoader();
+    require_once __DIR__.'/../vendor/symfony/symfony/src/Symfony/Component/Locale/Resources/stubs/functions.php';
 
-    $universalLoader->registerPrefixFallbacks(array(__DIR__.'/../vendor/symfony/src/Symfony/Component/Locale/Resources/stubs'));
+    $universalLoader->registerPrefixFallbacks(array(__DIR__.'/../vendor/symfony/symfony/src/Symfony/Component/Locale/Resources/stubs'));
+    $universalLoader->register();
 }
-$universalLoader->register();
 
 AnnotationRegistry::registerLoader(function($class) use ($loader) {
     $loader->loadClass($class);
