@@ -1,5 +1,5 @@
-Symfony Standard Edition
-========================
+Symfony 2.0 Composer Edition
+============================
 
 Symfony2 Standard Edition, manageable through [Composer](http://getcomposer.org/)
 and [Packagist](http://packagist.org/).
@@ -7,11 +7,7 @@ and [Packagist](http://packagist.org/).
 1) Download the Standard Edition
 --------------------------------
 
-Run the following commands:
-
-    git clone http://github.com/KnpLabs/symfony-standard.git
-    cd symfony-standard
-    rm -rf .git
+Download archive from [here](https://github.com/KnpLabs/symfony-with-composer/zipball/master).
 
 2) Installation
 ---------------
