@@ -6,7 +6,7 @@
         "twig/extensions":  "*",
 
         "symfony/assetic-bundle":         "*",
-        "sensio/generator-bundle":        "*",
+        "sensio/generator-bundle":        "2.0.0-dev",
         "sensio/framework-extra-bundle":  "2.0.0-dev",
         "sensio/distribution-bundle":     "2.0.0-dev",
         "jms/security-extra-bundle":      "1.0.x-dev"
