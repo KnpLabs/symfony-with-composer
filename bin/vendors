@@ -43,6 +43,9 @@ if (!file_exists($rootDir.'/composer.phar')) {
 // php on windows can't use the shebang line from system()
 $interpreter = defined('PHP_WINDOWS_VERSION_BUILD') ? 'php.exe' : 'php';
 
+// Change directory, as composer.phar must be run from the working directory
+chdir($rootDir);
+
 // Install/update dependencies
 system(sprintf('%s %s %s', $interpreter, escapeshellarg($rootDir.'/composer.phar'), $command));
 
