@@ -42,6 +42,7 @@ if (!file_exists($rootDir.'/composer.phar')) {
 
 // php on windows can't use the shebang line from system()
 $interpreter = defined('PHP_WINDOWS_VERSION_BUILD') ? 'php.exe' : 'php';
+$interpreter .= ' -d detect_unicode=0'; // Avoids https://github.com/composer/composer/issues/85
 
 // Change directory, as composer.phar must be run from the working directory
 chdir($rootDir);
