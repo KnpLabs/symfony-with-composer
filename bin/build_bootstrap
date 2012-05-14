@@ -11,7 +11,7 @@
  */
 
 $baseDir  = dirname(__DIR__);
-$autoload = require_once $baseDir.'/vendor/.composer/autoload.php';
+$autoload = require_once $baseDir.'/vendor/autoload.php';
 
 use Symfony\Component\ClassLoader\ClassCollectionLoader;
 
